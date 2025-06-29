@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Gotham;
+    src: url(/styles/assets/fonts/GOTHAM-BLACK.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    cursor: default;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    background: #01080E;
+    height: 10%;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font-size: 12px;
+    font-family: Gotham;
+}
+
+main {
+    margin-top: 10vh;
+}
+
+section {
+    height: 90vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_title {
+    margin: 8px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.section_title h2 {
+    font-size: 32px;
+    font-family: Gotham;
+}
+
+.title_deco {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.title_deco_part1 {
+    background: black;
+    height: 4px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+.title_deco_part2 {
+    background: black;
+    height: 2px;
+    aspect-ratio: 128 / 1;
+    border-radius: 2px;
+}
+
+#presentation_content {
+    background: blue;
+    height: 70vh;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#profile_photo {
+    background: #01080E;
+    height: 256px;
+    width: 256px;
+    border-radius: 50%;
+}
+
+#presentation_text {
+    background: white;
+    width: 256px;
+    aspect-ratio: 3 / 4;
+    border-radius: 16px;
+
+    opacity: 50%;
+    box-shadow: 0 8px 16px;
+}
+
+.frame_side {
+    background: white;
+    height: 32px;
+    width: 100%;
+    box-shadow: 0 0 16px;
+
+    position: absolute;
+}
+
+#frame_top {
+    transform: translateY(-35vh) rotate(-1deg);
+}
+
+#frame_bot {
+    transform: translateY(35vh) rotate(-1deg);
+}
+
+
+
+#knowledge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#knowledge_content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#slide1_content,
+#slide2_content,
+#slide3_content,
+#slide4_content,
+#slide5_content,
+#slide6_content,
+#slide7_content {
+    height: 100%;
+    width: 100%;
+
+    display: none;
+}
+
+#slide1_content.active,
+#slide2_content.active,
+#slide3_content.active,
+#slide4_content.active,
+#slide5_content.active,
+#slide6_content.active,
+#slide7_content.active {
+    display: block;
+}
+
+#slide1_content {
+
+}
+#slide2_content {
+
+}
+#slide3_content {
+
+}
+#slide4_content {
+
+}
+#slide5_content {
+
+}
+#slide6_content {
+
+}
+#slide7_content {
+
+}
+
+footer {
+    background: #01080E;
+    height: 40%;
+    width: 100%;
+}
