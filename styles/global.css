@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background: #01080E;
+    background: white;
     height: 10%;
     width: 100%;
 
@@ -30,10 +30,49 @@ header {
 
     display: flex;
     align-items: center;
+    justify-content: center;
+}
 
-    color: white;
+#header_content {
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header_content h1 {
+    color: rgb(9, 99, 199);
+    font-size: 24px;
+    font-family: Gotham;
+}
+
+#nav_links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#nav_links a {
+    color: rgb(9, 99, 199);
     font-size: 12px;
     font-family: Gotham;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+#nav_links a:hover {
+    color: #01080E;
+    font-size: 12px;
+    font-family: Gotham;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
 }
 
 main {
@@ -80,8 +119,10 @@ section {
     border-radius: 2px;
 }
 
+
+
 #presentation_content {
-    background: blue;
+    background: #01080E;
     height: 70vh;
     width: 60%;
     padding-left: 20%;
@@ -93,20 +134,90 @@ section {
 }
 
 #profile_photo {
-    background: #01080E;
+    background: white;
     height: 256px;
     width: 256px;
     border-radius: 50%;
 }
 
 #presentation_text {
-    background: white;
-    width: 256px;
-    aspect-ratio: 3 / 4;
-    border-radius: 16px;
+    display: flex;
+    flex-flow: column nowrap;
 
-    opacity: 50%;
-    box-shadow: 0 8px 16px;
+    color: white;
+    font-family: Gotham;
+}
+
+#presentation_title {
+    font-size: 32px;
+}
+
+#presentation_subtitle {
+    font-size: 24px;
+}
+
+#presentation_title span, #presentation_subtitle span {
+    color: rgb(9, 99, 199);
+}
+
+#presentation_text_content {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#contacts_icons {    
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+}
+
+.contact_icon {
+    height: 32px;
+    aspect-ratio: 1 / 1;
+    border: 2px solid rgb(9, 99, 199);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    color: rgb(9, 99, 199);
+    font-size: 16px;
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+#more_about {
+    width: 96px;
+    aspect-ratio: 8 / 1;
+    margin-top: 16px;
+    padding: 8px;
+    border: 2px solid rgb(9, 99, 199);
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(9, 99, 199);
+    font-size: 16px;
+    text-wrap: nowrap;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.contact_icon:hover, #more_about:hover {
+    border: 2px solid white;
+
+    color: white;
+
+    transition: 0.25s ease;
 }
 
 .frame_side {
